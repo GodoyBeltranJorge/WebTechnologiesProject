@@ -4,10 +4,252 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    
     <title>MICROFUTURISM</title>
     <link rel="icon" type="image/x-icon" href="/images/Robot3.ico">
 </head>
+<style>
+    .lista1{
+        margin-top: 1.5em;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    body{
+        background-image: url(./images/estrellas.jpg);
+        background-size: 100em 50em;
+        background-attachment: fixed;
+        margin-top: -2%;
+        margin-left: -1%;
+    }
+
+    .logomenu{
+        color: white;
+        font-size:1.4em;
+        margin-bottom: 2em;
+        font-family: 'Orbitron', sans-serif;
+        background-attachment: fixed;
+    }
+
+    .contenedormenu{
+        background-image: url(./images/galaxia\ moraday.jpg);
+        background-size: 20em 51em;
+        text-align: left;
+        height: 46em;
+        width: 16em;
+        padding-left: 3em;
+        padding-top: 5em;
+        background-attachment: fixed;
+        position:fixed;
+        border: 2px solid white;
+    }
+
+    a:link { 
+        text-decoration: none;
+    }
+
+    a:visited {
+         text-decoration: none;
+    }  
+    
+
+    .menuitems{
+        color: rgb(255, 255, 255);
+        margin-left: 1em;
+        font-size:large;
+       
+
+    }
+
+
+    .menu li:nth-child(1)::marker{
+        content: url(/images/home32.png);
+       
+        
+    }
+    
+    .menu li:nth-child(2)::marker{
+        content: url(/images/lupa32.png);
+        
+
+    }
+    .menu li:nth-child(3)::marker{
+        content: url(/images/usuario32.png);
+
+    }
+    .menu li:nth-child(4)::marker{
+        content: url(/images/post32.png);
+
+    }
+    .menu li:nth-child(5)::marker{
+        content: url(/images/exit32.png);
+
+    }
+
+    /*Estilos de la barra de busqueda amigos*/
+
+    
+
+    .contenedorsearch{
+        color:white;
+        margin-left: 45em;
+        margin-right: 25em;
+        padding-top: 16.5em;
+        height: 25em;
+        
+    }
+    .seach{
+        background-image: url(/images/hermosa-galaxia-azul-elementos-imagen-proporcionados-nasa-foto-alta-calidad_496756-8562.jpg);
+        padding-left: 2em;
+        padding-right: 2.3em;
+        padding-top: 1em;
+        padding-bottom: 7em;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+    .logo{
+        font-family: 'Orbitron', sans-serif;
+        font-size:xx-large ;
+        padding-left: 1.8em;
+ 
+    }
+
+    .menu1 li:nth-child(1)::marker{
+        content: url(/images/lupa32.png);
+    }
+
+    .menu2 li:nth-child(1)::marker{
+        content: url(/images/hombre32.png);
+    }
+
+    .menu2 li:nth-child(2)::marker{
+        content: url(/images/mujer32.png);
+    }
+
+    .menu1{
+        border: 2px solid white;
+        border-radius: 20px;
+        background-color: white;
+        
+
+    }
+			
+	.menu1 li ul {
+		display:none;
+		position:absolute;
+		min-width:18em;
+	}
+			
+	.menu1 li:hover> ul {
+		display:block;
+        transition: 3s;
+		}
+			
+	.menu1 li ul li {
+		position:relative;
+	}
+
+    .textofuera, .textodentro{
+        color: rgb(0, 0, 0);
+        background-color: white ;
+        border-radius: 20px;
+        padding-left:1em ;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .menu2{
+        background-color: white;
+        padding-top: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        border-bottom-left-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+    }
+
+    .a{
+        color:black;
+    }
+
+
+</style>
 <body>
+    <div class="contenedormenu">
+        <p class="logomenu">
+            MICROFUTURISM
+        </p>
+        <ul class="menu">
+            
+            <li class="lista1">
+                <a href="/wall.html">
+                    <span class="menuitems">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li class="lista1">
+                <a href="./seach.html">
+                    <span class="menuitems">
+                        Seach
+                    </span>
+                </a>
+            </li>
+            <li class="lista1">
+                <a href="./images/home.png">
+                    <span class="menuitems">
+                        Profile
+                    </span>
+                </a>
+            </li>
+            <li class="lista1">
+                <a href="./images/home.png">
+                    <span class="menuitems">
+                        New Post
+                    </span>
+                </a>
+            </li>
+            <li class="lista1">
+                <a href="/index.html">
+                    <span class="menuitems">
+                        Sign out
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contenedorsearch">
+        <div class="seach">
+            <p class="logo">
+                MICROFUTURISM
+            </p>
+            <div class="total">
+                <ul class="menu1">
+                    <li class="textodentro">
+                        Find your friends
+                        <ul class="menu2">
+                            <li class="textofuera">
+                               <a href="/profilemanuel.html">
+                                <span class="a">Manuel Gomez</span>
+                               </a> 
+                            </li>
+                            <li class="textofuera">
+                                <a href="/profilelola.html">
+                                <span class="a">Lola Lopez</span>
+                               </a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+
+    </div>
     
 </body>
 </html>
