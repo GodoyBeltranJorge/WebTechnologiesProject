@@ -6,76 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <style>
-             * {
-				margin:0px;
-				padding:0px;
-			}
-			
-			#header {
-				margin:auto;
-				width:500px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			
-			ul, ol {
-				list-style:none;
-			}
-			
-			.menu > li {
-				float:left;
-			}
-			
-			.menu li a {
-                margin-top: 5em;
-				background-color:white;
-				color: black;
-                border: 2px solid red;
-				text-decoration:none;
-				padding-left: 2em;
-                padding-right: 10em;
-                padding-bottom: 1em;
-                padding-top: 1em;
-				display:block;
-                border-radius: 20px;
-			}
-			
-			.menu li a:hover {
-				background-color:#434343;
-			}
-			
-			.menu li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.menu li:hover> ul {
-				display:block;
-                transition: 3s;
-			}
-			
-			.menu li ul li {
-				position:relative;
-			}
-			
-			
+    .menu li:nth-child(1)::marker{
+        content:attr("hola")
 
-
+    }
 </style>
 <body>
-    <div id="header">
-        <ul class="menu">
-            <li>Servicios
-                <ul>
-                    <li><a href="">AMIGO1</a></li>
-                    <li><a href="">AMIGO2</a></li>
-                    
 
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <ul class="menu">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>
+          <ol>
+            <li>Elemento 2.1</li>
+            <li>Elemento 2.2</li>
+            ...
+            <li>Elemento 2.N</li>
+          </ol>
+        </li>
+        <li>Elemento 3</li>
+        ...
+        <li>Elemento N</li>
+      </ul>
+    
 </body>
 </html>
