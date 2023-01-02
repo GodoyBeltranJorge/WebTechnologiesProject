@@ -14,6 +14,7 @@
     <link rel="icon" type="image/x-icon" href="/images/Robot3.ico">
 </head>
 <style>
+
     .lista1{
         margin-top: 1.5em;
         font-family: 'Orbitron', sans-serif;
@@ -23,8 +24,7 @@
         background-image: url(./images/estrellas.jpg);
         background-size: auto;
         background-attachment: fixed;
-
-        margin-top: -2%;
+        margin-top: -1%;
         margin-left: -1%;
     }
 
@@ -47,6 +47,7 @@
         background-attachment: fixed;
         position:fixed;
         border: 2px solid white;
+        margin-top: -8em;
     }
 
     a:link { 
@@ -57,20 +58,14 @@
          text-decoration: none;
     }  
     
-
     .menuitems{
         color: rgb(255, 255, 255);
         margin-left: 1em;
         font-size:large;
-       
-
     }
 
-
     .menu li:nth-child(1)::marker{
-        content: url(/images/home32.png);
-       
-        
+        content: url(/images/home32.png);   
     }
     
     .menu li:nth-child(2)::marker{
@@ -78,106 +73,95 @@
         
 
     }
+
     .menu li:nth-child(3)::marker{
         content: url(/images/usuario32.png);
 
     }
+
     .menu li:nth-child(4)::marker{
         content: url(/images/customer32.png);
 
     }
+
     .menu li:nth-child(5)::marker{
         content: url(/images/exit32.png);
 
     }
 
-    /*Estilos de la barra de busqueda amigos*/
+    /*Estilos del contenedor de reporte*/
 
-    
-
-    .contenedorsearch{
+    .reportcontainer{
+        margin-top: 8em;
+        margin-left: 40em;
         color:white;
-        margin-left: 45em;
-        margin-right: 25em;
-        padding-top: 16.5em;
-        height: 25em;
-        
-    }
-    .seach{
         background-image: url(/images/hermosa-galaxia-azul-elementos-imagen-proporcionados-nasa-foto-alta-calidad_496756-8562.jpg);
-        padding-left: 2em;
-        padding-right: 2.3em;
-        padding-top: 1em;
-        padding-bottom: 7em;
-        border: 2px solid white;
+        width: 35em;
+        padding: 2em;
+        border:2px solid white;
         border-radius: 20px;
-    }
-    .logo{
-        font-family: 'Orbitron', sans-serif;
-        font-size:xx-large ;
-        padding-left: 1.8em;
- 
-    }
-
-    .menu1 li:nth-child(1)::marker{
-        content: url(/images/lupa32.png);
-    }
-
-    .menu2 li:nth-child(1)::marker{
-        content: url(/images/manucirculoprueba2grandedefinitiva.png);
-    }
-
-    .menu2 li:nth-child(2)::marker{
-        content: url(/images/masiciruloborde-modifieddefinitiva2.png);
-    }
-
-    .menu1{
-        border: 2px solid white;
-        border-radius: 20px;
-        background-color: white;
-        
-
-    }
-			
-	.menu1 li ul {
-		display:none;
-		position:absolute;
-		min-width:18em;
-	}
-			
-	.menu1 li:hover> ul {
-		display:block;
-        transition: 3s;
-		}
-			
-	.menu1 li ul li {
-		position:relative;
-	}
-
-    .textofuera, .textodentro{
-        color: rgb(0, 0, 0);
-        background-color: white ;
-        border-radius: 20px;
-        padding-left:1em ;
         font-family: 'Orbitron', sans-serif;
     }
 
-    .menu2{
-        background-color: white;
-        padding-top: 1em;
-        padding-right: 1em;
+    .titulo{
+        text-align: center;
         padding-bottom: 1em;
-        border-bottom-left-radius: 20px ;
-        border-bottom-right-radius: 20px ;
+        font-size: xx-large;
+        
     }
 
-    .a{
-        color:black;
+    .contenido{
+        background-color: white;
+        color: black;
+        border:2px solid black;
+        border-radius: 20px;
+        padding: 2em;
+        padding-left: 1em;
     }
 
+    .opciones{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-family: 'Orbitron', sans-serif;
+    }
 
-</style>
+    .texto{
+        border-radius: 20px;
+        width: 37em;
+        padding-left: 1em;
+        padding-bottom: 7em;
+        padding-top: 1em;
+    }
+
+    .texto2{
+        border-radius: 20px;
+        width: 37em;
+        padding-left: 1em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    .enviar{
+        border-radius: 10px;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    </style>
 <body>
+    <SCRIPT  language=JavaScript> 
+        function go(){
+
+            if(document.form.correo.value==""){
+                alert("Please enter email to help us help you")
+            }else if(document.form.nombre.value==""){
+                alert("Please enter text to help us help you"); 
+            }else{
+                alert("Your message has been sent successfully, thank you for making a better community.")
+                document.form.submit();
+            }
+        } 
+    </SCRIPT> 
+  <FORM name=form action="wall.html">
     <div class="contenedormenu">
         <p class="logomenu">
             MICROFUTURISM
@@ -221,36 +205,31 @@
             </li>
         </ul>
     </div>
-
-    <div class="contenedorsearch">
-        <div class="seach">
-            <p class="logo">
-                MICROFUTURISM
-            </p>
-            <div class="total">
-                <ul class="menu1">
-                    <li class="textodentro">
-                        Find your friends
-                        <ul class="menu2">
-                            <li class="textofuera">
-                               <a href="/profilemanuel.html">
-                                <span class="a">Manuel Gomez</span>
-                               </a> 
-                            </li>
-                            <li class="textofuera">
-                                <a href="/profilemariaisabel.html">
-                                <span class="a">Maria Isabel</span>
-                               </a> 
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-            
+    <div class="reportcontainer">
+        <div class="titulo">
+            Report Problem
+        </div>
+        <div class="contenido">
+            What kind of problem do you have?
+            <select class="opciones">
+                <option>Reporting an account</option>+
+                <option>Problems with the site</option>
+                <option>Identity Supplement</option>
+                <option>Personalised attention</option>
+                <option>Other</option>
+            </select>
+            <p>Please tell us in more detail what your problem is:</p>
+            <form>
+                <input type="text" class="texto" id="nombre" name="nombre">
+                <br>
+                <p class="correo">Contact e-mail: </p>
+                <input type="text" class="texto2" name="correo">
+                <p><input onclick=go() type="button" class="enviar" id="Enviar" value="Enviar" name="Enviar"></p>
+            </form>
         </div>
 
     </div>
+    
     
 </body>
 </html>
