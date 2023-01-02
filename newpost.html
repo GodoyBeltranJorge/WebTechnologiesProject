@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    
     <title>MICROFUTURISM</title>
     <link rel="icon" type="image/x-icon" href="/images/Robot3.ico">
 </head>
@@ -46,9 +47,7 @@
         background-attachment: fixed;
         position:fixed;
         border: 2px solid white;
-        margin-top: -14em;
-        
-        
+        margin-top: -8em;
     }
 
     a:link { 
@@ -71,21 +70,24 @@
     
     .menu li:nth-child(2)::marker{
         content: url(/images/lupa32.png);
+        
+
     }
 
     .menu li:nth-child(3)::marker{
         content: url(/images/usuario32.png);
+
     }
 
     .menu li:nth-child(4)::marker{
         content: url(/images/post32.png);
+
     }
 
     .menu li:nth-child(5)::marker{
         content: url(/images/exit32.png);
-    }
 
-    /*ESTILOS DE LA PARTE INFORMATIVA*/
+    }
 
     .titulo{
         margin-left: 3.5em;
@@ -96,7 +98,7 @@
         font-family: 'Orbitron', sans-serif;
         border: 2px solid white;
         margin-left: 40em;
-        margin-top: 14em;
+        margin-top: 8em;
         margin-right: 20em;
         color:white;
         background-image: url(/images/hermosa-galaxia-azul-elementos-imagen-proporcionados-nasa-foto-alta-calidad_496756-8562.jpg);
@@ -112,8 +114,12 @@
         font-weight: 400;
     }
 
+    .menu3 li:nth-child(1)::marker{
+        content: url(/images/illojuancirculoblanco-modifiedDefinitivo.png);
+    }
 </style>
 <body>
+    
     <div class="contenedormenu">
         <p class="logomenu">
             MICROFUTURISM
@@ -142,7 +148,7 @@
                 </a>
             </li>
             <li class="lista1">
-                <a href="./images/home.png">
+                <a href="./newpost.html">
                     <span class="menuitems">
                         New Post
                     </span>
@@ -160,35 +166,18 @@
     <div class="contenedorinformacion">
         <ul class="menu3">
             <il class="titulo">
-                Account information
+                Create a new post
             </il>
 
         </ul>
         <div class="contenedoropciones">
             <section class="opciones">
-                <p class="nombre">
-                    <strong>Name: </strong> Lola Lopez Garcia
-                </p>
-                <p class="nombreusuario">
-                    <strong>User name:</strong> LolaLop 
-                </p>
-                <p class="sitioweb">
-                    <strong>Web site: </strong> <a href="https://www.instagram.com/mariaisabelrr9/?hl=es"> https://www.instagram.com/mariaisabelrr9/?hl=es</a>
-                </p>
-                <p class="inicio">
-                    <strong>Date he joined MICROFUTURISM: </strong> 30/12/2022
-                </p>
-                <p class="ubicacion">
-                    <strong>Location of the account:</strong> Spain
-                </p>
-            </section>
-
-        </div>
-        <div class="contenedorinformacion2">
-            <section class="informacion">
-
-            </section>
-
-        </div>
-    </div>
+                <form method="post" action="wall.html" action="/profile.html">
+                    <input type="text" name="texto" placeholder="Express yourself here">
+                    <input type="imagen" name="imagen" placeholder="Insert image">
+                    <input onclick=go() type="button" value="Upload publication"></p>
+              </form>
 </body>
+
+
+</html>

@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
-    
     <title>MICROFUTURISM</title>
     <link rel="icon" type="image/x-icon" href="/images/Robot3.ico">
 </head>
 <style>
+
     .lista1{
         margin-top: 1.5em;
         font-family: 'Orbitron', sans-serif;
@@ -23,8 +23,7 @@
         background-image: url(./images/estrellas.jpg);
         background-size: auto;
         background-attachment: fixed;
-
-        margin-top: -2%;
+        margin-top: -1%;
         margin-left: -1%;
     }
 
@@ -47,6 +46,9 @@
         background-attachment: fixed;
         position:fixed;
         border: 2px solid white;
+        margin-top: -14em;
+        
+        
     }
 
     a:link { 
@@ -57,124 +59,58 @@
          text-decoration: none;
     }  
     
-
     .menuitems{
         color: rgb(255, 255, 255);
         margin-left: 1em;
         font-size:large;
-       
-
     }
 
-
     .menu li:nth-child(1)::marker{
-        content: url(/images/home32.png);
-       
-        
+        content: url(/images/home32.png);   
     }
     
     .menu li:nth-child(2)::marker{
         content: url(/images/lupa32.png);
-        
-
     }
+
     .menu li:nth-child(3)::marker{
         content: url(/images/usuario32.png);
-
     }
+
     .menu li:nth-child(4)::marker{
         content: url(/images/post32.png);
-
     }
+
     .menu li:nth-child(5)::marker{
         content: url(/images/exit32.png);
-
     }
 
-    /*Estilos de la barra de busqueda amigos*/
+    /*ESTILOS DE LA PARTE INFORMATIVA*/
 
-    
+    .titulo{
+        margin-left: 3.5em;
+        font-size: xx-large;
+    }
 
-    .contenedorsearch{
+    .contenedorinformacion{
+        font-family: 'Orbitron', sans-serif;
+        border: 2px solid white;
+        margin-left: 40em;
+        margin-top: 14em;
+        margin-right: 20em;
         color:white;
-        margin-left: 45em;
-        margin-right: 25em;
-        padding-top: 16.5em;
-        height: 25em;
-        
-    }
-    .seach{
         background-image: url(/images/hermosa-galaxia-azul-elementos-imagen-proporcionados-nasa-foto-alta-calidad_496756-8562.jpg);
-        padding-left: 2em;
-        padding-right: 2.3em;
-        padding-top: 1em;
-        padding-bottom: 7em;
-        border: 2px solid white;
         border-radius: 20px;
     }
-    .logo{
-        font-family: 'Orbitron', sans-serif;
-        font-size:xx-large ;
-        padding-left: 1.8em;
- 
-    }
-
-    .menu1 li:nth-child(1)::marker{
-        content: url(/images/lupa32.png);
-    }
-
-    .menu2 li:nth-child(1)::marker{
-        content: url(/images/manucirculoprueba2grandedefinitiva.png);
-    }
-
-    .menu2 li:nth-child(2)::marker{
-        content: url(/images/masiciruloborde-modifieddefinitiva2.png);
-    }
-
-    .menu1{
-        border: 2px solid white;
-        border-radius: 20px;
+    .contenedoropciones{
+        margin: 1em;
+        margin-top: 2em;
         background-color: white;
-        
-
-    }
-			
-	.menu1 li ul {
-		display:none;
-		position:absolute;
-		min-width:18em;
-	}
-			
-	.menu1 li:hover> ul {
-		display:block;
-        transition: 3s;
-		}
-			
-	.menu1 li ul li {
-		position:relative;
-	}
-
-    .textofuera, .textodentro{
-        color: rgb(0, 0, 0);
-        background-color: white ;
-        border-radius: 20px;
-        padding-left:1em ;
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    .menu2{
-        background-color: white;
-        padding-top: 1em;
-        padding-right: 1em;
-        padding-bottom: 1em;
-        border-bottom-left-radius: 20px ;
-        border-bottom-right-radius: 20px ;
-    }
-
-    .a{
         color:black;
+        padding: 1em;
+        border-radius: 20px;
+        font-weight: 400;
     }
-
 
 </style>
 <body>
@@ -221,36 +157,38 @@
             </li>
         </ul>
     </div>
+    <div class="contenedorinformacion">
+        <ul class="menu3">
+            <il class="titulo">
+                Account information
+            </il>
 
-    <div class="contenedorsearch">
-        <div class="seach">
-            <p class="logo">
-                MICROFUTURISM
-            </p>
-            <div class="total">
-                <ul class="menu1">
-                    <li class="textodentro">
-                        Find your friends
-                        <ul class="menu2">
-                            <li class="textofuera">
-                               <a href="/profilemanuel.html">
-                                <span class="a">Manuel Gomez</span>
-                               </a> 
-                            </li>
-                            <li class="textofuera">
-                                <a href="/profilemariaisabel.html">
-                                <span class="a">Maria Isabel</span>
-                               </a> 
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+        </ul>
+        <div class="contenedoropciones">
+            <section class="opciones">
+                <p class="nombre">
+                    <strong>Name: </strong> Maria Isabel García
+                </p>
+                <p class="nombreusuario">
+                    <strong>User name:</strong> MaryIsabel_01
+                </p>
+                <p class="sitioweb">
+                    <strong>Web site: </strong> <a href="https://www.instagram.com/mariaisabelrr9/?hl=es"> https://www.instagram.com/mariaisabelrr9/?hl=es</a>
+                </p>
+                <p class="inicio">
+                    <strong>Date he joined MICROFUTURISM: </strong> 30/12/2022
+                </p>
+                <p class="ubicacion">
+                    <strong>Location of the account:</strong> Spain
+                </p>
+            </section>
 
-            </div>
-            
         </div>
+        <div class="contenedorinformacion2">
+            <section class="informacion">
 
+            </section>
+
+        </div>
     </div>
-    
 </body>
-</html>
